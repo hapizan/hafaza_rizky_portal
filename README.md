@@ -10,14 +10,20 @@ A modern, professional static website for your business company profile built wi
 
 ## Features
 
-### Pages
-- Home - Hero section, featured services, portfolio preview, testimonials
-- About - Company mission, vision, values, and history
-- Services - Comprehensive service offerings
-- Portfolio - Showcase of projects and case studies
-- Team - Team member profiles
-- Testimonials - Client reviews and feedback
-- Contact - Contact form and company information
+### Single-Page Application (SPA)
+- All content consolidated into a single page with smooth anchor-based navigation
+- Sections: Home (Hero), Services, About, Portfolio, Team, Testimonials, Contact
+- Smooth scrolling navigation between sections
+- Mobile-friendly navigation menu
+
+### Pages/Sections
+- **Home (Hero)** - Hero section with call-to-action buttons
+- **Services** - Web Application, Mobile Application, and Training services
+- **About** - Company mission, vision, values, and registration information
+- **Portfolio** - Showcase of projects and case studies
+- **Team** - Team member profiles with LinkedIn links
+- **Testimonials** - Client reviews and feedback
+- **Contact** - Contact form with mailto functionality and company information
 
 ### SEO Features
 - Dynamic metadata for each page
@@ -127,11 +133,13 @@ Edit `tailwind.config.js` to customize:
 ## Customization
 
 ### Update Content
-1. Replace placeholder content in page components
-2. Update team member information in `app/team/page.tsx`
-3. Update services in `app/services/page.tsx`
-4. Update portfolio items in `app/portfolio/page.tsx`
-5. Update testimonials in `app/testimonials/page.tsx`
+1. Replace placeholder content in `app/page.tsx` (single-page application)
+2. Update team member information and LinkedIn links in `app/page.tsx` (teamMembers array)
+3. Update services in `app/page.tsx` (services array)
+4. Update portfolio items in `app/page.tsx` (portfolioItems array)
+5. Update testimonials in `app/page.tsx` (testimonials array)
+6. Update contact information in `app/page.tsx` (contactInfo array)
+7. Update company email in contact form (currently: hafazarizky@gmail.com)
 
 ### Update Colors
 Edit `tailwind.config.js` to change the color scheme:
@@ -232,6 +240,28 @@ Before going live:
 - [ ] Verify PWA installation
 - [ ] Test offline functionality
 - [ ] Run Lighthouse audit
+
+## Recent Updates
+
+### Latest Changes
+- ✅ Converted to single-page application (SPA) with anchor-based navigation
+- ✅ Updated team member LinkedIn profiles
+- ✅ Fixed ESLint errors (unescaped entities)
+- ✅ Improved CSS configuration for static exports
+- ✅ Enhanced Vercel deployment configuration with proper CSS headers
+- ✅ Contact form configured with mailto functionality
+- ✅ Fixed structured data components for better SEO
+
+### Company Information
+- **Company Name**: Hafaza Rizky Trading
+- **Registration Number**: 002898689-P
+- **Contact Email**: hafazarizky@gmail.com
+- **Services**: Web Application, Mobile Application, Training
+
+### Team Members
+- **Ts. Mohammad Izzat** - Head of Project Management
+- **Noorfaiz Kadir** - Head of Solution Expertise  
+- **Hapizan Seman** - Head of Technology
 
 ## License
 
