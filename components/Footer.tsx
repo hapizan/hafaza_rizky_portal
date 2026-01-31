@@ -23,7 +23,7 @@ export default function Footer() {
     { icon: FiTwitter, href: 'https://twitter.com', label: 'Twitter' },
     { icon: FiGithub, href: 'https://github.com', label: 'GitHub' },
     { icon: FiLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: FiMail, href: 'mailto:contact@example.com', label: 'Email' },
+    { icon: FiMail, href: 'mailto:hafazarizky@gmail.com', label: 'Email' },
   ];
 
   return (
@@ -33,11 +33,11 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-bold text-white mb-4">
-              YourCompany
+              Hafaza Rizky Trading
             </h3>
             <p className="text-gray-400 mb-6 max-w-md">
-              Building innovative solutions for the future. We deliver
-              exceptional results that drive business growth.
+              Providing expert Web Application, Mobile Application, and Training services. 
+              Your trusted partner for innovative technology solutions.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => {
@@ -96,7 +96,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} YourCompany. All rights reserved.
+            © {currentYear} Hafaza Rizky Trading (002898689-P). All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6 text-sm">
             <Link

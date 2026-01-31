@@ -38,7 +38,7 @@ export function OrganizationSchema() {
           '@type': 'ContactPoint',
           telephone: '+1-XXX-XXX-XXXX',
           contactType: 'Customer Service',
-          email: 'contact@example.com',
+          email: 'hafazarizky@gmail.com',
         },
       }}
     />

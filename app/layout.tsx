@@ -11,8 +11,8 @@ import { generateMetadata as genMeta } from '@/lib/seo';
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = genMeta({
-  title: undefined,
-  description: undefined,
+  title: 'Hafaza Rizky Trading',
+  description: 'Hafaza Rizky Trading (002898689-P) - Web Application, Mobile Application, and Training services',
   path: '/',
 });
 

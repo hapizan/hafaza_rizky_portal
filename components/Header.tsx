@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 export default function Header() {
@@ -17,13 +16,13 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/services', label: 'Services' },
-    { href: '/portfolio', label: 'Portfolio' },
-    { href: '/team', label: 'Team' },
-    { href: '/testimonials', label: 'Testimonials' },
-    { href: '/contact', label: 'Contact' },
+    { href: '#', label: 'Home' },
+    { href: '#services', label: 'Services' },
+    { href: '#about', label: 'About' },
+    { href: '#portfolio', label: 'Portfolio' },
+    { href: '#team', label: 'Team' },
+    { href: '#testimonials', label: 'Testimonials' },
+    { href: '#contact', label: 'Contact' },
   ];
 
   return (
@@ -37,23 +36,36 @@ export default function Header() {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link
-            href="/"
-            className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent"
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent cursor-pointer"
           >
-            YourCompany
-          </Link>
+            Hafaza Rizky
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.href}
                 href={link.href}
+                onClick={(e) => {
+                  if (link.href.startsWith('#')) {
+                    e.preventDefault();
+                    const element = document.querySelector(link.href);
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }
+                }}
                 className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
           </div>
 
@@ -80,14 +92,23 @@ export default function Header() {
         >
           <div className="py-4 space-y-2 bg-white rounded-lg mt-2 shadow-lg">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.href}
                 href={link.href}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => {
+                  setIsMenuOpen(false);
+                  if (link.href.startsWith('#')) {
+                    e.preventDefault();
+                    const element = document.querySelector(link.href);
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }
+                }}
                 className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg transition-colors font-medium"
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
           </div>
         </div>

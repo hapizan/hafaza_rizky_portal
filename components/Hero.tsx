@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
 
@@ -46,19 +45,33 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <Link
-              href="/contact"
+            <a
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.querySelector('#contact');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
               className="group bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-50 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2 min-w-[200px] justify-center touch-manipulation"
             >
               Get Started
               <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link
-              href="/portfolio"
+            </a>
+            <a
+              href="#portfolio"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.querySelector('#portfolio');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
               className="group bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-all duration-300 flex items-center gap-2 min-w-[200px] justify-center touch-manipulation"
             >
               View Portfolio
-            </Link>
+            </a>
           </motion.div>
         </div>
       </div>

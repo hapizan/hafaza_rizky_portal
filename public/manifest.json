@@ -1,7 +1,7 @@
 {
-  "name": "Your Company Name",
-  "short_name": "Company",
-  "description": "Your company description goes here",
+  "name": "Hafaza Rizky Trading",
+  "short_name": "Hafaza Rizky",
+  "description": "Web Application, Mobile Application, and Training services",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

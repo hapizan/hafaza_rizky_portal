@@ -1,15 +1,15 @@
 import { Metadata } from 'next';
 
 export const siteConfig = {
-  name: 'Your Company Name',
-  shortName: 'Company',
-  description: 'Your company description goes here. A modern tech startup delivering innovative solutions.',
+  name: 'Hafaza Rizky Trading',
+  shortName: 'Hafaza Rizky',
+  description: 'Hafaza Rizky Trading (002898689-P) - Providing Web Application, Mobile Application, and Training services. Expert solutions for your business needs.',
   url: 'https://yourdomain.com',
   ogImage: 'https://yourdomain.com/og-image.jpg',
   links: {
-    twitter: 'https://twitter.com/yourcompany',
-    github: 'https://github.com/yourcompany',
-    linkedin: 'https://linkedin.com/company/yourcompany',
+    twitter: 'https://twitter.com/hafazarizky',
+    github: 'https://github.com/hafazarizky',
+    linkedin: 'https://linkedin.com/company/hafazarizky',
   },
 };
 

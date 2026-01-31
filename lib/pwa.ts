@@ -1,7 +1,7 @@
 export const pwaConfig = {
-  name: 'Your Company Name',
-  shortName: 'Company',
-  description: 'Your company description',
+  name: 'Hafaza Rizky Trading',
+  shortName: 'Hafaza Rizky',
+  description: 'Web Application, Mobile Application, and Training services',
   themeColor: '#0ea5e9',
   backgroundColor: '#ffffff',
 };
