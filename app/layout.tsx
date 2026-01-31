@@ -7,6 +7,7 @@ import InstallPrompt from '@/components/PWA/InstallPrompt';
 import OfflineIndicator from '@/components/PWA/OfflineIndicator';
 import UpdateNotification from '@/components/PWA/UpdateNotification';
 import { generateMetadata as genMeta } from '@/lib/seo';
+import { OrganizationSchema, WebSiteSchema } from '@/components/SEO/StructuredData';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -24,12 +25,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
+        <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#0ea5e9" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
       </head>
       <body>
+        <OrganizationSchema />
+        <WebSiteSchema />
         <Header />
         <main className="pt-16 md:pt-20">{children}</main>
         <Footer />

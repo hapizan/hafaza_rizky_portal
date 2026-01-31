@@ -1,4 +1,4 @@
-import { StructuredData } from './StructuredData';
+import StructuredData from './StructuredData';
 
 interface BreadcrumbItem {
   name: string;

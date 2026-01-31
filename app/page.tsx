@@ -7,7 +7,6 @@ import Hero from '@/components/Hero';
 import TeamMember from '@/components/TeamMember';
 import TestimonialCard from '@/components/TestimonialCard';
 import { FiCode, FiSmartphone, FiBook, FiMail, FiPhone, FiMapPin, FiSend } from 'react-icons/fi';
-import { OrganizationSchema, WebSiteSchema } from '@/components/SEO/StructuredData';
 
 // Services data
 const services = [
@@ -38,7 +37,7 @@ const teamMembers = [
     role: 'Head of Project Management',
     bio: 'Leading project management initiatives with expertise in delivering successful technology solutions on time and within budget.',
     social: {
-      linkedin: 'https://linkedin.com',
+      linkedin: 'https://www.linkedin.com/in/ts-mohammad-izzat-sharipuddin-aaa9bb76/',
     },
   },
   {
@@ -46,7 +45,7 @@ const teamMembers = [
     role: 'Head of Solution Expertise',
     bio: 'Expert in designing and implementing innovative solutions that address complex business challenges and drive digital transformation.',
     social: {
-      linkedin: 'https://linkedin.com',
+      linkedin: 'https://www.linkedin.com/in/noorfaiz/',
     },
   },
   {
@@ -54,7 +53,7 @@ const teamMembers = [
     role: 'Head of Technology',
     bio: 'Technology leader specializing in modern web and mobile development, ensuring cutting-edge solutions and technical excellence.',
     social: {
-      linkedin: 'https://linkedin.com',
+      linkedin: 'https://www.linkedin.com/in/hapizan-bin-seman-a39835172/',
     },
   },
 ];
@@ -208,9 +207,6 @@ export default function HomePage() {
 
   return (
     <>
-      <OrganizationSchema />
-      <WebSiteSchema />
-      
       {/* Hero Section */}
       <Hero />
 
@@ -375,7 +371,7 @@ export default function HomePage() {
             Get In Touch
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
           </p>
         </div>
 
@@ -494,7 +490,7 @@ export default function HomePage() {
                 {submitStatus === 'success' && (
                   <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
                     <p className="font-semibold mb-1">Thank you for your message!</p>
-                    <p className="text-sm">Your email client should open with the message pre-filled. If it doesn't, please email us directly at <a href="mailto:hafazarizky@gmail.com" className="underline font-semibold">hafazarizky@gmail.com</a></p>
+                    <p className="text-sm">Your email client should open with the message pre-filled. If it doesn&apos;t, please email us directly at <a href="mailto:hafazarizky@gmail.com" className="underline font-semibold">hafazarizky@gmail.com</a></p>
                   </div>
                 )}
                 {submitStatus === 'error' && (
